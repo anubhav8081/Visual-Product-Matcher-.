@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Product Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Similarity Finder</h1>
+    <p>Select how you want to upload an image</p>
+    
+    <div class="button-group">
+      <button id="urlBtn">Upload via URL</button>
+      <button id="fileBtn">Upload via File</button>
+    </div>
+
+    <div id="inputArea" class="hidden">
+      <!-- Dynamic input field appears here -->
+    </div>
+
+    <div id="preview" class="hidden">
+      <h3>Uploaded Image:</h3>
+      <img id="previewImg" alt="Preview">
+      <button id="processBtn">Find Similar Images</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h3>Similar Images:</h3>
+      <div class="result-grid" id="resultGrid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
